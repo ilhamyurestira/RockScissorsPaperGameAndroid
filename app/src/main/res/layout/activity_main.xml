@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:padding="4dp"
+    tools:context=".ui.MainActivity">
 
     <ImageView
         android:layout_width="match_parent"
@@ -129,6 +130,8 @@
         android:id="@+id/refresh"
         android:layout_width="@dimen/_50sdp"
         android:layout_height="@dimen/_50sdp"
+        android:layout_marginEnd="@dimen/_4sdp"
+        android:layout_marginBottom="@dimen/_4sdp"
         android:src="@drawable/ic_refresh"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
