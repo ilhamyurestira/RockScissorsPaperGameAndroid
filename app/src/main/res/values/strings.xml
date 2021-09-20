@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RockScissorsPaper Game</string>
+    <string name="label_tv_computer">COM</string>
+    <string name="label_tv_player">Player 1</string>
+</resources>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_game" />
+
+    <ImageView
+        android:id="@+id/iv_game_name"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:src="@drawable/ic_game_name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:id="@+id/ll_player"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/iv_versus"
+        app:layout_constraintTop_toBottomOf="@id/iv_game_name">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:text="@string/label_tv_player"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_24ssp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv_scissors_player"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/ic_scissors" />
+
+        <ImageView
+            android:id="@+id/iv_rock_player"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/ic_rock" />
+
+        <ImageView
+            android:id="@+id/iv_paper_player"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/ic_paper" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_versus"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_marginTop="@dimen/_130sdp"
+        android:src="@drawable/ic_vs"
+        app:layout_constraintLeft_toRightOf="@id/ll_player"
+        app:layout_constraintRight_toLeftOf="@id/computer"
+        app:layout_constraintTop_toBottomOf="@id/iv_game_name"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:id="@+id/computer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toRightOf="@id/iv_versus"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_game_name">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:text="@string/label_tv_computer"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_24ssp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv_scissors_com"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/ic_scissors" />
+
+        <ImageView
+            android:id="@+id/iv_rock_com"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/ic_rock" />
+
+        <ImageView
+            android:id="@+id/iv_paper_com"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/ic_paper" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/refresh"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:src="@drawable/ic_refresh"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="ContentDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
